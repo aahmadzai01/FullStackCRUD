@@ -1,0 +1,25 @@
+ <div class="text-center"> <h1> Add New-Car</h1></div>
+      <div class="container">
+        <form (ngSubmit) = "saveCar()">
+
+            <div class="form-group">
+            <label> Nom</label>
+            <input class="form-control" type="text" name="nom" id="nom" [(ngModel)] = "vot.nom">
+          </div>
+
+            <div class="form-group">
+            <label> Model</label>
+            <input class="form-control" type="text" name="model" id="model" [(ngModel)] = "vot.model">
+          </div>
+
+            <div class="form-group">
+            <label>Couleur</label>
+            <input class="form-control" type="text" name="colour" id="colour" [(ngModel)] = "vot.colour">
+          </div>
+
+          <button class="btn btn-primary">Submit</button>
+
+
+        </form>
+      </div>
+

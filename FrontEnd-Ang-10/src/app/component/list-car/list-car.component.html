@@ -1,0 +1,26 @@
+
+
+<div class="text-center"> <h1>Weclome to CarDetails</h1>
+<p>With Angular 10</p>
+</div>
+<div class="container">
+    <button routerLink = "/addlist" class="btn btn-primary ">AjouterCar</button>
+<table class="table table-responseive ">
+
+    <tr>
+        <th>Nom</th>
+        <th>Model</th>
+        <th>Couleur</th>
+        <th>Operation</th>
+        
+    </tr>
+    <tr *ngFor = "let car of vot">
+
+        <td>{{car.nom}}</td>
+        <td>{{car.model}}</td>
+        <td>{{car.colour}}</td>
+        <button routerLink='/addlist/{{car.id}}' class="btn btn-primary">Edit</button>
+        <button routerLink='' class="btn btn-danger" (click) = "DeleteCar(car.id)">Delete</button>
+    </tr>
+</table>
+</div>
